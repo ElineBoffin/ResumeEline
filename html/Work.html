@@ -3,127 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/work.png">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/timeline.css">
     <link rel="stylesheet" href="../css/background.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
-    
-    <title>Homepage</title>
+    <title>WorkExp</title>
 </head>
-<style>
-button {
-  position: relative;
-  background: #444;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  letter-spacing: 0.1rem;
-  font-size: 15px;
-  padding: 1rem 3rem;
-  transition: 0.2s;
-  margin-bottom: 3px;
-  margin-top: 3px;
-  width: 300px;
-}
-
-button:hover {
-  letter-spacing: 0.2rem;
-  padding: 1.1rem 3.1rem;
-  background: var(--clr);
-  color: var(--clr);
-  animation: box 3s infinite;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  background: #272822;
-}
-
-button span {
-  position: relative;
-  z-index: 1;
-}
-
-button i {
-  position: absolute;
-  inset: 0;
-  display: block;
-}
-
-button i::before,
-button i::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  border: 2px solid var(--clr);
-  background: #272822;
-  transition: 0.2s;
-}
-
-button i::before {
-  left: 80%;
-  top: -2px;
-}
-
-button:hover i::before {
-  width: 15px;
-  left: 20%;
-  animation: move 3s infinite;
-}
-
-button i::after {
-  left: 20%;
-  bottom: -2px;
-}
-
-button:hover i::after {
-  width: 15px;
-  left: 80%;
-  animation: move 3s infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes box {
-  0% {
-    box-shadow: #27272c;
-  }
-  50% {
-    box-shadow: 0 0 25px var(--clr);
-  }
-  100% {
-    box-shadow: #27272c;
-  }
-}
-
-.knop {
-  text-align: center;
-}
-
-</style>
 <body>
-
-    <nav>
-        <div class="knop">
-            <button style="--clr:#39FF14"><span>Skills</span><i></i></button>
-            <button onclick="window.location.href='../html/Edu.html'" style="--clr:#FF44CC"><span>Education</span><i></i></button>
-            <button onclick="window.location.href='../html/WorkExp.html'" style="--clr:#0FF0FC"><span>Work experience</span><i></i></button>
-            <button onclick="window.location.href='../html/Home.html'" style="--clr:#8A2BE2"><span>About me</span><i></i></button>
-          </div>
-    </nav>
+  <!--Start navigation-->
+  <nav class="main-menu">
+		<ul>
+			<li>
+				<a href="../html/index.html">
+					<i class="fa"><img class="icon" src="../images/Me.png"></i>
+					<span class="nav-text">Eline Boffin</span>
+				</a>
+			</li>
+			<li>
+				<a href="../html/Edu.html">
+					<i class="fa"><img class="icon" src="../images/Edu.png"></i>
+					<span class="nav-text">Education</span>
+				</a>
+			  
+			</li>
+			<li class="has-subnav">
+				<a href="../html/Work.html">
+					<i class="fa"><img class="icon" src="../images/work.png"></i>
+					<span class="nav-text">Work Experience</span>
+				</a>
+				
+			</li>
+			<li class="has-subnav">
+				<a href="#">
+				   <i class="fa fa"><img class="icon" src="../images/Coding.png"></i>
+					<span class="nav-text">Hardskills</span>
+				</a>
+				
+			</li>
+			<li class="has-subnav">
+				<a href="#">
+				   <i class="fa"><img class="icon" src="../images/skill.png"></i>
+					<span class="nav-text">Softskills</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+  <!--End navigation-->
 
     <div class="timeline">
         <div class="outer">
