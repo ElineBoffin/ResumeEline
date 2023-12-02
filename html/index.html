@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css.map">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../images/Me.png">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/index.css">
     <title>Homepage</title>
 </head>
+<style>
+
+</style>
+
 <body>
-	<main>
+    <main>
+        <!--Start Navigation-->
         <nav class="main-menu">
             <h1>Eline Boffin</h1>
-
             <ul>
                 <li class="nav-item active">
                     <b></b>
@@ -26,8 +34,8 @@
                 <li class="nav-item">
                     <b></b>
                     <b></b>
-                    <a href="#">
-                        <i class="fa fa-user nav-icon"></i>
+                    <a href="../html/Edu.html">
+                        <i class="fa-solid fa-graduation-cap nav-icon"></i>
                         <span class="nav-text">Education</span>
                     </a>
                 </li>
@@ -35,66 +43,48 @@
                 <li class="nav-item">
                     <b></b>
                     <b></b>
-                    <a href="#">
-                        <i class="fa fa-calendar-check nav-icon"></i>
-                        <span class="nav-text">Work Experience</span>
+                    <a href="../html/Work.html">
+                        <i class="fa-solid fa-user-gear nav-icon"></i>
+                        <span class="nav-text">Experience</span>
                     </a>
                 </li>
             </ul>
         </nav>
+        <!--End Navigation-->
 
         <section class="content">
             <div class="left-content">
                 <div class="activities">
                     <h1>About me</h1>
+                    <!--Profile picture-->
                     <div class="activity-container">
-                        <div class="image-container img-one">
-                            <img src=""
-                                alt="tennis" />
-                            <div class="overlay">
-                                <h3>tekst</h3>
-                            </div>
-                        </div>
-
-                        <div class="image-container img-two">
-                            <img src=""
-                                alt="hiking" />
-                            <div class="overlay">
-                                <h3>tekst</h3>
-                            </div>
-                        </div>
-
                         <div class="image-container img-three">
-                            <img src=""
-                                alt="running" />
+                            <img src="../images/profile.png" alt="me" />
                             <div class="overlay">
-                                <h3>tekst</h3>
                             </div>
                         </div>
+        
+                          <div class="image-container img-four">
+                            <a href="www.linkedin.com/in/eline-boffin" target="_blank">
+                                <img src="../images/linkedin.png">
+                            </a>
+                            <!--<div class="overlay">
+                              <h3></h3>
+                            </div>-->
+                          </div>
+            
+                          <div class="image-container img-five">
+                            <img src="../images/mail.png" alt="yoga" />
+                            <div class="overlay">
+                              <h3>Mail me!</h3>
+                            </div>
+                          </div>
 
-                        <div class="image-container img-four">
-                            <img src=""
-                                alt="cycling" />
+                          <div class="image-container img-seven">
+                            <img src="../images/bdayDate.png" alt="yoga" />
                             <div class="overlay">
-                                <h3>tekst</h3>
                             </div>
-                        </div>
-
-                        <div class="image-container img-five">
-                            <img src=""
-                                alt="yoga" />
-                            <div class="overlay">
-                                <h3>Tekst</h3>
-                            </div>
-                        </div>
-
-                        <div class="image-container img-six">
-                            <img src=""
-                                alt="swimming" />
-                            <div class="overlay">
-                                <h3>tekst</h3>
-                            </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
 
@@ -104,7 +94,7 @@
                         <div class="calendar">
                             <div class="day-and-activity activity-one">
                                 <div class="day">
-                                    <img src="../images/resume.png" style="height: 50px; width: 50px; margin-top: 20px;">
+                                    <img src="../images/resume.png">
                                 </div>
                                 <div class="activity">
                                     <h2>Resume</h2>
@@ -114,15 +104,17 @@
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
                                             style="--i: 2" alt="" />
                                         <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"
-                                            style="--i: 3" alt="" />  
+                                            style="--i: 3" alt="" />
                                     </div>
                                 </div>
-                                <a href="https://elineboffin.netlify.app/" target="_blank" class="btn">Join</a>
+                                <a class="btn popup" onclick="myFunction()">Check
+                                    <span class="popuptext" id="myPopup">You're already admiring this project</span>
+                                </a>
                             </div>
 
                             <div class="day-and-activity activity-two">
                                 <div class="day">
-                                    <img src="../images/website.png" style="height: 50px; width: 50px; margin-top: 20px;">
+                                    <img src="../images/website.png">
                                 </div>
                                 <div class="activity">
                                     <h2>Gardentools Website</h2>
@@ -132,52 +124,58 @@
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
                                             style="--i: 2" alt="" />
                                         <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"
-                                            style="--i: 3" alt="" />  
+                                            style="--i: 3" alt="" />
                                     </div>
                                 </div>
-                                <button class="btn">Join</button>
+                                <a class="btn popup" href="#" target="_blank">Check</a>
                             </div>
 
                             <div class="day-and-activity activity-three">
                                 <div class="day">
-                                    <img src="../images/xmas.png" style="height: 50px; width: 50px; margin-top: 20px;">
+                                    <img src="../images/xmas.png">
                                 </div>
                                 <div class="activity">
                                     <h2>Christmas countdown</h2>
                                     <div class="participants">
-                                        <img src="https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png"
-                                            style="--i: 1" alt="" />
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
-                                            style="--i: 2" alt="" />
-                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"
-                                            style="--i: 3" alt="" />  
+                                        <img class="iconP1"
+                                            src="https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png" />
+                                        <img class="iconP2"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" />
+                                        <img class="iconP3"
+                                            src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" />
                                     </div>
                                 </div>
-                                <button class="btn">Join</button>
+                                <a class="btn popup" href="https://activatechristmas.netlify.app/"
+                                    target="_blank">Check</a>
                             </div>
                             <h3 class="soon">
                                 <i class="fa-solid fa-spinner fa-spin"></i>
                                 More comming soon
                             </h3>
-                            
+
                         </div>
                     </div>
 
                     <div class="personal-bests">
                         <h1>Hobbies</h1>
                         <div class="personal-bests-container">
+                            <div class="best-item box-zero">
+                                <p>Puzzels</p>
+                                <img class="hobbyS" src="../images/puzzel.png" alt="swim" />
+                            </div>
                             <div class="best-item box-one">
                                 <p>Swimming</p>
-                                <img src="" alt="" />
+                                <img class="hobbyS" src="../images/swim.png" alt="swim" />
                             </div>
                             <div class="best-item box-two">
                                 <p>Cooking</p>
-                                <img src="" alt="" />
+                                <img class="hobbyCS" src="../images/chef.png" alt="chef" />
                             </div>
                             <div class="best-item box-three">
                                 <p>Gaming</p>
-                                <img src="" alt="" />
+                                <img id="hobby" src="../images/gamer.png" alt="gamer" />
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -201,5 +199,16 @@
     </main>
 </body>
 <script src="../js/index.js"></script>
-</html>
+<script>
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
 
+        // Set a timeout to remove the "show" class after 3 seconds
+        setTimeout(function () {
+            popup.classList.remove("show");
+        }, 3000);
+    }
+</script>
+
+</html>
