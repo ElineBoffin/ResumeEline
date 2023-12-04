@@ -198,12 +198,6 @@ main {
     column-gap: 10px;
 }
   
-  .img-two {
-    grid-area: 2 / 3 / 2 / 4;
-    height: 75%;
-    width: 70%;
-  }
-  
   /*.img-three {
     display: block;
     grid-area: 1 / 2 / 3 / 4;
@@ -234,20 +228,29 @@ main {
   }
   
 
-/*.img-one {
+.img-one {
     grid-area: 1 / 3 / 3 / 4;
 }
 
 .img-two {
-    grid-area: 2 / 3 / 3 / 4;
-    margin-top: 50px;
-}*/
+    grid-area: 1 / 3 / 3 / 7;
+    color: white;
+    /*margin-top: 50px;*/
+}
 
 .img-three {
     display: block;
     grid-area: 1 / 1 / 3 / 3;
     height: 97%;
     width: 65%;
+}
+
+.front {
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.loc {
+    padding-bottom: 10px;
 }
 
 /*.img-four {
@@ -457,7 +460,6 @@ main {
 }
 
 /* PERSONAL BESTS */
-
 .personal-bests {
     display: block;
 }
@@ -766,18 +768,77 @@ main {
     border-radius: 5px;
 }
 
-@media (max-width: 3000px) {
+/*#flag {
+    height: 35px;
+    width: 35px;
+    margin-top: 15px;
+}*/
+
+/*@media (max-width: 3000px) {
     .img-three {
         height: 150%;
         width: 70%;
     }
+}*/
+
+#flag {
+    margin-right: 10px; /* Adjust the margin as needed */
+    height: 35px;
+    width: 35px;
+    margin-top: 15px;
 }
 
-@media (max-width: 2000px) {
+@media (min-width: 2100px) {
     .img-three {
-        height: 100%;
-        width: 80%;
+        height: 130%;
+        width: 70%;
     }
+
+    .img-four {
+        height: 70%;
+        width: 50%;
+    }
+
+    .img-five {
+        height: 70%;
+        width: 50%;
+    }
+
+    .img-seven {
+        height: 70%;
+        width: 50%;
+    }
+
+    /*.weekly-schedule h1 {
+        margin-top: 25%;
+    }
+
+    .activity-container {
+        display: flex;
+    }
+
+    .img-four {
+        height: 40%;
+        width: 40%;
+    }
+
+    .img-five {
+        height: 40%;
+        width: 40%;
+    }
+
+    .img-seven {
+        height: 40%;
+        width: 40%;
+    }
+
+    .activities {
+        height: 70%;
+    }
+
+    .weekly-schedule {
+        margin-top: -20%;
+    }*/
 }
 
 
@@ -912,9 +973,28 @@ main {
         font-size: 0.9rem;
     }
 
-    .personal-bests-container {
-        grid-template-rows: repeat(3, 70px);
-        gap: 10px;
+    .box-zero .hobbyS {
+        width: 20%;
+        height: 65%;
+        margin-top: -20px;
+    }
+
+    .box-one .hobbyS {
+        width: 25%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .box-two .hobbyCS {
+        width: 25%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .box-three #hobby {
+        width: 25%;
+        height: 70%;
+        margin-top: -20px;
     }
 
     .activity-container {
@@ -932,6 +1012,7 @@ main {
 
     .img-three {
         /*display: none;*/
+        width: 80%;
     }
 
     .img-four {
@@ -976,6 +1057,10 @@ main {
     .card-img {
         aspect-ratio: 16/9;
     }
+
+    .img-two {
+        grid-area: 3 / 1 / 3 / 7;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -983,10 +1068,13 @@ main {
         grid-template-rows: 5% 19% 36% 40%;
     }
 
-    
     .img-three {
         height: 80%;
         width: 70%;
+    }
+    
+    .img-two {
+        grid-area: 3 / 1 / 3 / 7;
     }
 }
 
@@ -1015,13 +1103,13 @@ main {
     }
 
     .img-two {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 3 / 1 / 3 / 3;
     }
 
     .img-three {
         /*display: none;*/
-        height: 70%;
-        width: 70%;
+        height: 80%;
+        width: 65%;
     }
 
     .img-four {
@@ -1057,7 +1145,7 @@ main {
     }
 
     .weekly-schedule {
-        margin-top: -150px;
+        /*margin-top: 50px;*/
     }
 
     #hobby {
@@ -1094,6 +1182,13 @@ main {
         height: 60%;
         width: 55%;
     }
+
+    .img-two {
+        grid-area: 2 / 1 / 4 / 3;
+        margin-top: 50px;
+
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1102,7 +1197,8 @@ main {
     }
 
     .main-menu {
-        height: 170%;
+        /*height: 170%;*/
+        height: 150%;
     }
 
     .content {
@@ -1111,30 +1207,22 @@ main {
         grid-template-areas:
             "leftContent"
             "rightContent";
-            height: 170%;
+            height: 150%;
     }
 
-    .left-content {
-        grid-area: leftContent;
-        grid-template-rows: 45% 55%;
-        padding: 10px 20px 10px;
+    .weekly-schedule {
+        margin-top: -40px;
     }
+
 
     .right-content {
         grid-area: rightContent;
         grid-template-rows: 5% 40% 50%;
-        margin: 15px 15px 0 15px;
-        padding: 10px 0 0;
-        gap: 15px;
-    }
-
-    .activities,
-    .weekly-schedule {
-        margin-top: 10px;
-    }
-
-    .weekly-schedule {
-        margin-top: -100px;
+        margin: 70px 15px 0 15px;
+        height: 50%;
+        margin-top: 30%;
+        /*padding: 10px 0 0;
+        gap: 15px;*/
     }
 
     .active-calories-container {
@@ -1152,33 +1240,77 @@ main {
         margin-top: 100px;
     }*/
 
+    .img-two {
+        margin-top: 100px;
+    }
+
     .img-three {
+        height: 80%;
+        width: 50%;
+        margin-right: -50%;
+    }
+
+    /*.box-zero, .box-one, .box-two, .box-three {
+        width: 50%;
+        text-align: center;
+    }*/
+
+    .box-zero .hobbyS {
+        width: 20%;
+        height: 65%;
+        margin-top: -20px;
+    }
+
+    .box-one .hobbyS {
+        width: 25%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .box-two .hobbyCS {
+        width: 25%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .box-three #hobby {
+        width: 25%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .left-content {
+        height: 110%;
+    }
+
+    /*.right-content {
+        margin-top: 40%;
+    }*/
+}
+
+@media (max-width: 500px) {
+    .weekly-schedule {
+        margin-top: 10%;
+    }
+
+    .img-three {
+        width: 90%;
+    }
+
+    .left-content {
+        height: 110%;
+    }
+
+    .right-content {
+        grid-area: rightContent;
+        grid-template-rows: 5% 40% 50%;
+        margin: 70px 15px 0 15px;
         height: 50%;
-        width: 40%;
+        margin-top: 60%;
+        /*padding: 10px 0 0;
+        gap: 15px;*/
     }
 
-    .box-zero img {
-        margin-top: -20px;
-        width: 25%;
-        height: 70%;
-    }
-
-    .box-one img {
-        margin-top: -20px;
-        width: 25%;
-        height: 70%;
-    }
-
-    .box-two img {
-        margin-top: -20px;
-        width: 25%;
-        height: 70%;
-    }
-
-    .box-three img {
-        width: 1%;
-        height: 70%;
-    }
 }
 
 .soon {
