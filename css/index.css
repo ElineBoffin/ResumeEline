@@ -1,169 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap");
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-nav {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-}
-
-nav ul,
-nav ul li {
-    outline: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-body {
-    font-family: "Nunito", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #1B2A41;
-    /*background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/5baf8325-ed69-40b0-b9d2-d8c5d2bde3b0);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
-
-/* MAIN MENU */
-
-main {
-    display: grid;
-    grid-template-columns: 13% 87%;
-    min-height: 90vh;
-    /*height: 100%;*/
-    width: 100%;
-    margin: 40px;
-    background: rgb(254, 254, 254);
-    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
-        0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-radius: 15px;
-    z-index: 10;
-}
-
-.main-menu {
-    overflow: hidden;
-    /*background: rgb(73, 57, 113);*/
-    background-color: #324A5F;
-    padding-top: 10px;
-    border-radius: 15px 0 0 15px;
-    font-family: "Roboto", sans-serif;
-}
-
-.main-menu h1 {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-    margin: 20px 0 30px;
-    color: #fff;
-    font-family: "Nunito", sans-serif;
-}
-
-.logo {
-    display: none;
-}
-
-.nav-item {
-    position: relative;
-    display: block;
-}
-
-.nav-item a {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1rem;
-    padding: 15px 0;
-    margin-left: 10px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.nav-item b:nth-child(1) {
-    position: absolute;
-    top: -15px;
-    height: 15px;
-    width: 100%;
-    background: #fff;
-    display: none;
-}
-
-.nav-item b:nth-child(1)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-bottom-right-radius: 20px;
-    /*background: rgb(73, 57, 113);*/
-    background-color: #324A5F;
-}
-
-.nav-item b:nth-child(2) {
-    position: absolute;
-    bottom: -15px;
-    height: 15px;
-    width: 100%;
-    background: #fff;
-    display: none;
-}
-
-.nav-item b:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-top-right-radius: 20px;
-    /*background: rgb(73, 57, 113);*/
-    background-color: #324A5F;
-}
-
-.nav-item.active b:nth-child(1),
-.nav-item.active b:nth-child(2) {
-    display: block;
-}
-
-.nav-item.active a {
-    text-decoration: none;
-    color: #000;
-    background: rgb(254, 254, 254);
-}
-
-.nav-icon {
-    width: 60px;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.nav-text {
-    display: block;
-    width: 120px;
-    height: 20px;
-    font-family: "Mulish", sans-serif;
-}
-
 /* CONTENT */
-
 .content {
     display: grid;
     grid-template-columns: 75% 25%;
@@ -171,7 +8,6 @@ main {
 }
 
 /* LEFT CONTENT */
-
 .left-content {
     display: grid;
     grid-template-rows: 50% 50%;
@@ -183,7 +19,6 @@ main {
 }
 
 /* ACTIVITIES */
-
 .activities h1 {
     margin: 0 0 20px;
     font-size: 1.4rem;
@@ -197,36 +32,31 @@ main {
     grid-template-rows: repeat(2, 150px);
     column-gap: 10px;
 }
-  
-  /*.img-three {
-    display: block;
-    grid-area: 1 / 2 / 3 / 4;
-  }*/
-  
-  .img-four {
+
+.img-four {
     grid-area: 1 / 4 / 2 / 5;
     height: 75%;
     width: 70%;
-  }
-  
-  .img-five {
+}
+
+.img-five {
     grid-area: 1 / 5 / 2 / 6;
     height: 75%;
     width: 70%;
-  }
-  
-  .img-six {
+}
+
+.img-six {
     display: block;
     grid-area: 2 / 4 / 3 / 6;
     height: 75%;
     width: 70%;
-  }
-  
-  .img-seven {
+}
+
+.img-seven {
     height: 75%;
     width: 70%;
-  }
-  
+}
+
 
 .img-one {
     grid-area: 1 / 3 / 3 / 4;
@@ -249,40 +79,20 @@ main {
     text-decoration: underline;
     padding-bottom: 10px;
 }
+
 .loc {
     padding-bottom: 10px;
 }
 
-/*.img-four {
-    grid-area: 1 / 4 / 3 / 5;
-}
-
-.img-five {
-    grid-area: 1 / 5 / 2 / 6;
-    margin-top: 50px;
-}
-
-.img-six {
-    display: block;
-    grid-area: 1 / 5 / 3 / 6;
-}
-
-.img-seven {
-    margin-top: 50px;
-}*/
-
 .image-container {
     position: relative;
     margin-bottom: 10px;
-    /*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
-    border-radius: 10px;*/
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    /*object-fit: cover;*/
 }
 
 .overlay {
@@ -314,7 +124,6 @@ main {
 }
 
 /* LEFT BOTTOM */
-
 .left-bottom {
     display: grid;
     grid-template-columns: 55% 40%;
@@ -322,7 +131,6 @@ main {
 }
 
 /* WEEKLY SCHEDULE */
-
 .weekly-schedule {
     display: flex;
     flex-direction: column;
@@ -553,10 +361,9 @@ main {
 }
 
 /* RIGHT CONTENT */
-
 .right-content {
     display: grid;
-    grid-template-rows: 5% 20% 75%;
+    grid-template-rows: 5% 35% 30%;
     background: #f6f7fb;
     margin: 15px 15px 15px 0;
     padding: 10px 0;
@@ -564,7 +371,6 @@ main {
 }
 
 /* USER INFO */
-
 .user-info {
     display: grid;
     grid-template-columns: 30% 55% 15%;
@@ -588,11 +394,9 @@ main {
 }
 
 /* ACTIVE CALORIES  */
-
 .active-calories {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: start;
     background-color: rgb(214, 227, 248);
     padding: 0 10px;
     margin: 15px 10px 0;
@@ -667,14 +471,13 @@ main {
 }
 
 /* MOBILE PERSONAL BESTS  */
-
-.mobile-personal-bests {
+/*.mobile-personal-bests {
     display: none;
-}
+}*/
 
 /* FRIEND ACTIVITIES  */
 
-.friends-activity {
+/*.friends-activity {
     display: flex;
     flex-direction: column;
 }
@@ -683,23 +486,23 @@ main {
     font-size: 1.2rem;
     font-weight: 700;
     margin: 15px 0 10px 15px;
-}
+}*/
 
-.card-container {
+/*.card-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
+}*/
 
-.card {
+/*.card {
     background-color: #fff;
     margin: 0 10px;
     padding: 5px 7px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
-}
+}*/
 
-.card-two {
+/*.card-two {
     display: block;
 }
 
@@ -736,53 +539,43 @@ main {
 .card p {
     font-size: 0.9rem;
     padding: 0 5px 5px;
-}
+}*/
 
 .day img {
     height: 50px;
     width: 50px;
     margin-top: 20px;
-}
+}*
 
-/*.bday-container {
+.bday-container {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -50px;
     margin-left: -150px;
-}*/
-
-.bday {
-    height: 20%;
-    width: 10%;
-    /*display: block;
-    margin: 0 auto;*/
-    margin-right: 10px;
 }
 
-.linked {
+/*.bday {
+    height: 20%;
+    width: 10%;
+    margin-right: 10px;
+}*/
+
+/*.linked {
     height: 15%;
     width: 10%;
     margin-right: 10px;
     border-radius: 5px;
+}*/
+
+.hardskills {
+    text-align: left;
 }
 
-/*#flag {
-    height: 35px;
-    width: 35px;
-    margin-top: 15px;
-}*/
-
-/*@media (max-width: 3000px) {
-    .img-three {
-        height: 150%;
-        width: 70%;
-    }
-}*/
-
 #flag {
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin as needed */
     height: 35px;
     width: 35px;
     margin-top: 15px;
@@ -808,39 +601,7 @@ main {
         height: 70%;
         width: 50%;
     }
-
-    /*.weekly-schedule h1 {
-        margin-top: 25%;
-    }
-
-    .activity-container {
-        display: flex;
-    }
-
-    .img-four {
-        height: 40%;
-        width: 40%;
-    }
-
-    .img-five {
-        height: 40%;
-        width: 40%;
-    }
-
-    .img-seven {
-        height: 40%;
-        width: 40%;
-    }
-
-    .activities {
-        height: 70%;
-    }
-
-    .weekly-schedule {
-        margin-top: -20%;
-    }*/
 }
-
 
 @media (max-width: 1500px) {
     main {
@@ -890,6 +651,7 @@ main {
         margin-right: 3px;
         /*font-size: 5px;*/
     }
+
     .personal-bests-container {
         grid-template-rows: repeat(3, 98px);
         gap: 15px;
@@ -942,7 +704,7 @@ main {
     }
 
     .right-content {
-        grid-template-rows: 4% 20% 76%;
+        grid-template-rows: 4% 48% 48%;
         margin: 15px 15px 15px 0;
     }
 
@@ -1036,10 +798,6 @@ main {
         grid-template-rows: 4% 19% 36% 41%;
     }
 
-    .personal-bests {
-        /*display: none;*/
-    }
-
     .mobile-personal-bests {
         display: block;
         margin: 0 10px;
@@ -1072,7 +830,7 @@ main {
         height: 80%;
         width: 70%;
     }
-    
+
     .img-two {
         grid-area: 3 / 1 / 3 / 7;
     }
@@ -1126,10 +884,7 @@ main {
 }
 
 @media (max-width: 800px) {
-    .content {
-        /*grid-template-columns: 52% 48%;*/
-        /*height: 100vh;*/
-    }
+
 
     .activity h2 {
         font-size: 15px;
@@ -1139,13 +894,10 @@ main {
         height: 20px;
         width: 20px;
     }
+
     .day img {
         height: 30px;
         width: 30px;
-    }
-
-    .weekly-schedule {
-        /*margin-top: 50px;*/
     }
 
     #hobby {
@@ -1154,30 +906,30 @@ main {
         height: 70%;
     }
 
-    .box-zero img {
+    .box-zero .hobbyS {
         margin-top: -20px;
         width: 35%;
         height: 70%;
     }
 
-    .box-one img {
+    .box-one .hobbyS {
         margin-top: -20px;
-        width: 35%;
+        width: 40%;
         height: 70%;
     }
 
-    .box-two img {
+    .box-two .hobbyCS {
         margin-top: -20px;
-        width: 35%;
+        width: 45%;
         height: 70%;
     }
 
-    .box-three img {
+    .box-three #hobby {
         margin-top: -20px;
-        width: 35%;
+        width: 40%;
         height: 70%;
     }
-    
+
     .img-three {
         height: 60%;
         width: 55%;
@@ -1207,13 +959,8 @@ main {
         grid-template-areas:
             "leftContent"
             "rightContent";
-            height: 150%;
+        height: 150%;
     }
-
-    .weekly-schedule {
-        margin-top: -40px;
-    }
-
 
     .right-content {
         grid-area: rightContent;
@@ -1236,10 +983,6 @@ main {
         display: none;
     }
 
-    /*.calendar {
-        margin-top: 100px;
-    }*/
-
     .img-two {
         margin-top: 100px;
     }
@@ -1250,31 +993,26 @@ main {
         margin-right: -50%;
     }
 
-    /*.box-zero, .box-one, .box-two, .box-three {
-        width: 50%;
-        text-align: center;
-    }*/
-
     .box-zero .hobbyS {
-        width: 20%;
+        width: 30%;
         height: 65%;
         margin-top: -20px;
     }
 
     .box-one .hobbyS {
-        width: 25%;
+        width: 30%;
         height: 70%;
         margin-top: -20px;
     }
 
     .box-two .hobbyCS {
-        width: 25%;
+        width: 30%;
         height: 70%;
         margin-top: -20px;
     }
 
     .box-three #hobby {
-        width: 25%;
+        width: 30%;
         height: 70%;
         margin-top: -20px;
     }
@@ -1282,10 +1020,6 @@ main {
     .left-content {
         height: 110%;
     }
-
-    /*.right-content {
-        margin-top: 40%;
-    }*/
 }
 
 @media (max-width: 500px) {
@@ -1307,21 +1041,43 @@ main {
         margin: 70px 15px 0 15px;
         height: 50%;
         margin-top: 60%;
-        /*padding: 10px 0 0;
-        gap: 15px;*/
+    }
+
+    .box-zero .hobbyS {
+        width: 40%;
+        height: 65%;
+        margin-top: -20px;
+    }
+
+    .box-one .hobbyS {
+        width: 40%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .box-two .hobbyCS {
+        width: 40%;
+        height: 70%;
+        margin-top: -20px;
+    }
+
+    .box-three #hobby {
+        width: 40%;
+        height: 70%;
+        margin-top: -20px;
     }
 
 }
 
 .soon {
-  margin-top: 15px;
-  color: white;
-  text-align: center;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
 }
 
 #spinner {
-  color: white;
-  align-items: center;
+    color: white;
+    align-items: center;
 }
 
 .iconP1 {
@@ -1336,13 +1092,28 @@ main {
     --i: 3;
 }
 
+.hardSK1 {
+    height: 75%;
+    width: 45%;
+    margin-top: 5px;
+}
+
+.softSK1 {
+    height: 75%;
+    width: 50%;
+}
+
+.skillText {
+    text-align: left;
+}
+
 /*PopUp*/
 .popup {
     text-align: center;
-  }
-  
-  /* The actual popup */
-  .popup .popuptext {
+}
+
+/* The actual popup */
+.popup .popuptext {
     visibility: hidden;
     width: 160px;
     background-color: #555;
@@ -1355,10 +1126,10 @@ main {
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -1367,32 +1138,227 @@ main {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
+}
 
-  #test {
-    height: 20%;
-    width: 30%;
-    margin-left: 25px;
-  }
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-  .aboutText {
-    color: white;
-  }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Progress Bar hardskills*/
+.progress-7 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#E44D27 0 0) 0/0% no-repeat #ddd;
+    animation: p7 2s forwards;
+    /* Gebruik 'forwards' om de laatste frame te behouden */
+}
+
+@keyframes p7 {
+    100% {
+        background-size: 100%;
+    }
+}
+
+.progress-8 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#224BE5 0 0) 0/0% no-repeat #ddd;
+    animation: p7 2s forwards;
+    /* Gebruik 'forwards' om de laatste frame te behouden */
+}
+
+@keyframes p8 {
+    100% {
+        background-size: 100%;
+    }
+}
+
+.progress-9 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#D4B830 0 0) 0/0% no-repeat #ddd;
+    animation: p9 2s forwards;
+    /* Use 'forwards' to retain the last frame */
+}
+
+@keyframes p9 {
+    75% {
+        background-size: 75%;
+        background-color: #ddd;
+        /* Yellow color at 75% */
+    }
+
+    100% {
+        background-size: 75%;
+        background-color: #ddd;
+        /* Ensure it stays yellow at the end */
+    }
+}
+
+.progress-10 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background: rgb(244, 38, 138);
+    background:
+        linear-gradient(90deg, rgba(244, 38, 138, 1) 0%, rgba(208, 6, 136, 1) 50%, rgba(169, 35, 245, 1) 100%) 0/0% no-repeat #ddd;
+    animation: p10 2s forwards;
+    /* Use 'forwards' to retain the last frame */
+}
+
+@keyframes p10 {
+    50% {
+        background-size: 50%;
+        background-color: #ddd;
+        /* Set the color at 50% */
+    }
+
+    100% {
+        background-size: 50%;
+        background-color: #ddd;
+        /* Ensure it stays the same color at the end */
+    }
+}
+
+
+/*Progress circkle*/
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+/*Flemish*/
+div[role="progressbarFL"] {
+    --size: 3rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 50px;
+}
+
+div[role="progressbarFL"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/*French*/
+div[role="progressbarFR"] {
+    --size: 3rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 50px;
+}
+
+div[role="progressbarFR"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/*English*/
+div[role="progressbarEN"] {
+    --size: 3rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 50px;
+}
+
+div[role="progressbarEN"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.languageImg {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
