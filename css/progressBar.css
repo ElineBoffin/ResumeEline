@@ -1,0 +1,193 @@
+/*Progress Bar hardskills*/
+.progress-7 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#E44D27 0 0) 0/0% no-repeat #ddd;
+    animation: p7 2s forwards;
+    /* Gebruik 'forwards' om de laatste frame te behouden */
+}
+
+@keyframes p7 {
+    100% {
+        background-size: 100%;
+    }
+}
+
+.progress-8 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#224BE5 0 0) 0/0% no-repeat #ddd;
+    animation: p7 2s forwards;
+    /* Gebruik 'forwards' om de laatste frame te behouden */
+}
+
+@keyframes p8 {
+    100% {
+        background-size: 100%;
+    }
+}
+
+.progress-9 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#D4B830 0 0) 0/0% no-repeat #ddd;
+    animation: p9 2s forwards;
+    /* Use 'forwards' to retain the last frame */
+}
+
+@keyframes p9 {
+    75% {
+        background-size: 75%;
+        background-color: #ddd;
+        /* Yellow color at 75% */
+    }
+
+    100% {
+        background-size: 75%;
+        background-color: #ddd;
+        /* Ensure it stays yellow at the end */
+    }
+}
+
+.progress-10 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background: rgb(244, 38, 138);
+    background:
+        linear-gradient(90deg, rgba(244, 38, 138, 1) 0%, rgba(208, 6, 136, 1) 50%, rgba(169, 35, 245, 1) 100%) 0/0% no-repeat #ddd;
+    animation: p10 2s forwards;
+    /* Use 'forwards' to retain the last frame */
+}
+
+@keyframes p10 {
+    50% {
+        background-size: 50%;
+        background-color: #ddd;
+        /* Set the color at 50% */
+    }
+
+    100% {
+        background-size: 50%;
+        background-color: #ddd;
+        /* Ensure it stays the same color at the end */
+    }
+}
+
+
+/*Progress circkle*/
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+/*Flemish*/
+div[role="progressbarFL"] {
+    --size: 3rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 50px;
+}
+
+div[role="progressbarFL"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/*French*/
+div[role="progressbarFR"] {
+    --size: 3rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 50px;
+}
+
+div[role="progressbarFR"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/*English*/
+div[role="progressbarEN"] {
+    --size: 3rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 50px;
+}
+
+div[role="progressbarEN"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.languageImg {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
