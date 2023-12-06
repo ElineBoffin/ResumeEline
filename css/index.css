@@ -774,20 +774,32 @@
 
 @media (max-width: 500px) {
     .projects {
-        margin-top: 10%;
+        margin-top: -15%;
+    }
+
+    .hobbies {
+        margin-top: -15%;
     }
 
     .img-one {
-        width: 90%;
+        width: 80%;
+    }
+
+    #flag {
+        width: 15%;
     }
 
     .left-content {
-        height: 110%;
+        height: 115%;
+    }
+
+    .left-bottom {
+        margin-top: -5%;
     }
 
     .right-content {
         grid-area: rightContent;
-        grid-template-rows: 5% 40% 50%;
+        grid-template-rows: 0% 35% 30%;
         margin: 70px 15px 0 15px;
         height: 50%;
         margin-top: 60%;
@@ -817,4 +829,12 @@
         margin-top: -20px;
     }
 
+    .btn {
+        width: 95%;
+
+    }
+
+    .skills {
+        width: 93%;
+    }
 }
