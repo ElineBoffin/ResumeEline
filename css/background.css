@@ -20,6 +20,7 @@
 		top: 0;
 		animation: background 20s linear infinite;
 		-webkit-animation: background 20s linear infinite;
+        z-index: -1;
 	}
 	
 	&:after{

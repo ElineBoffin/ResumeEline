@@ -5,40 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<style>
-  .popup-button {
-    position: relative;
-}
-
-.popup-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-</style>
 <body>
-  <button class="popup-button" onmouseover="showPopup()" onmouseout="hidePopup()">Hover me</button>
-
-<div id="popup" class="popup-content">
-    Dit is een popup!
-</div>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <form name="contact" method="POST" netlify>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
 </body>
-<script>
-  function showPopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "block";
-}
+</html>
 
-function hidePopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-}
+</body>
+</html>
 
-</script>
+
+</body>
+<script src="/js/submitForm.js"></script>
 </html>
