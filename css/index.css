@@ -280,6 +280,10 @@
     animation: fadeIn 1s;
 }
 
+.swim {
+    width: 20%;
+}
+
 @media (max-width: 3000px) {
     .img-one {
         height: 150%;
@@ -290,8 +294,10 @@
     .box-one .swim,
     .box-two .chef,
     .box-three .game {
-        width: 30%;
+        width: 37%;
     }
+
+    
 
     .front {
         font-size: 30px;
@@ -372,7 +378,6 @@
     #flag {
         height: 50px;
     }
-
 }
 
 
@@ -505,7 +510,7 @@
     }
 
     .btn {
-        padding: 8px 8px;
+        /*padding: 8px 8px;*/
         font-size: 0.9rem;
     }
 
@@ -683,10 +688,15 @@
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
     main {
         grid-template-columns: 15% 85%;
     }
+
+     /* {
+        grid-template-columns: 8% 92%;
+        margin: 30px;
+    }*/
 
     .main-menu {
         height: 130%;
@@ -723,7 +733,8 @@
 
     .img-one {
         height: 80%;
-        width: 45%;
+        width: 65%;
+        align-items: center;
     }
 
     .box-zero .puzzel {
@@ -770,6 +781,10 @@
     .hobbies {
         margin-top: 15px;
     }
+
+    #flag {
+        width: 15%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -782,7 +797,7 @@
     }
 
     .img-one {
-        width: 80%;
+        width: 70%;
     }
 
     #flag {
@@ -837,4 +852,11 @@
     .skills {
         width: 93%;
     }
+
+    @media (max-width: 450px) {
+        .img-one {
+            width: 80%;
+        }
+    }
+    
 }
