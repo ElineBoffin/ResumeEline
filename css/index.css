@@ -257,7 +257,7 @@
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
-    transition: visibility 0.5s ease;
+    /*transition: visibility 0.5s ease;*/
     /* Add transition for smoother effect */
 }
 
@@ -276,8 +276,8 @@
 /* Toggle this class - hide and show the popup */
 .popup:hover .popuptext {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+    /*-webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;*/
 }
 
 @media (max-width: 3000px) {
@@ -290,7 +290,7 @@
     .box-one .swim,
     .box-two .chef,
     .box-three .game {
-        width: 30%;
+        width: 40%;
     }
 
     .front {
@@ -836,5 +836,39 @@
 
     .skills {
         width: 93%;
+    }
+}
+
+@media (max-width: 376px) {
+    .img-one {
+        width: 100%;
+    }
+
+    .front {
+        font-size: 23px;
+    }
+
+    .loc {
+        font-size: 17px;
+    }
+
+    .aboutText {
+        font-size: 15px;
+    }
+
+    #flag {
+        width: 20%;
+    }
+
+    .btn {
+        visibility: hidden;
+    }
+
+    .activity h2 {
+        font-size: 12px;
+    }
+
+    .participants {
+        visibility: hidden;
     }
 }
