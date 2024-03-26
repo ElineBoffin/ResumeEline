@@ -4,354 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../images/Me.png">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css.map"> <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Font awesome-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--W3SchoolsCSS-->
-    <link rel="stylesheet" href="../css/nav.css"> <!--Navigation-->
-    <link rel="stylesheet" href="../css/progressBar.css"> <!--ProgressBars-->
-    <link rel="stylesheet" href="../css/projects.css"> <!--Projects-->
-    <link rel="stylesheet" href="../css/hobbies.css"> <!--Hobbies-->
-    <link rel="stylesheet" href="../css/index.css"> <!--Homepage style-->
-    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
 </head>
-<style>
-
-</style>
 
 <body>
-    <main>
-        <!--Start Navigation-->
-        <nav class="main-menu">
-            <h1>Eline Boffin</h1>
-            <ul>
-                <li class="nav-item active">
-                    <b></b>
-                    <b></b>
-                    <a href="#">
-                        <i class="fa fa-house nav-icon"></i>
-                        <span class="nav-text">Home</span>
-                    </a>
-                </li>
+  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<label for="menu-icon"></label>
+  	<nav class="nav"> 		
+  		<ul class="pt-5">
+            <li><a href="../html/test.html">Home</a></li>
+            <li><a href="../html/about.html">About me</a></li>
+  			<li><a href="../html/Edu.html">Education</a></li>
+  			<li><a href="../html/Work.html">Experience</a></li>
+  			<li><a href="../html/projects.html">Projects</a></li>
+  			<li><a href="../html/contact.html">Contact</a></li>
+  		</ul>
+  	</nav>
 
-                <li class="nav-item">
-                    <b></b>
-                    <b></b>
-                    <a href="../html/Edu.html">
-                        <i class="fa-solid fa-graduation-cap nav-icon"></i>
-                        <span class="nav-text">Education</span>
-                    </a>
-                </li>
+  	<div class="section-center">
+        <img class="profilePic" src="../images/profile.png" alt="">
+  		<h1 class="mb-0">Eline Boffin</h1>
+        <h2>Frontend Developer</h2>
+  	</div>
 
-                <li class="nav-item">
-                    <b></b>
-                    <b></b>
-                    <a href="../html/Work.html">
-                        <i class="fa-solid fa-user-gear nav-icon"></i>
-                        <span class="nav-text">Experience</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <b></b>
-                    <b></b>
-                    <a href="../html/contact.html">
-                        <i class="fa-solid fa-address-book nav-icon"></i>
-                        <span class="nav-text">Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!--End Navigation-->
-
-        <section class="content">
-            <div class="left-content">
-                <div class="about">
-                    <h1>About me</h1>
-                    
-                    <!--Profile picture-->
-                    <div class="about-container">
-                        <div class="image-container img-one">
-                            <img class="profileImg" src="../images/profile.png" alt="me" />
-                            <div class="overlay">
-                            </div>
-                        </div>
-
-                        <div class="image-container img-two">
-                            <h3 class="front">
-                                Frontend developer</h3>
-                            <h4 class="loc">24 Years old | Limburg</h4>
-                            <p class="aboutText">
-                                Passionate Frontend Developer with expertise in HTML, CSS, and JavaScript.
-                                Proven track record of translating design concepts into responsive, user-friendly
-                                interfaces.
-                                Strong collaborator with effective communication skills.
-                                Eager to contribute creativity and skills to innovative projects.
-                            </p>
-                            <img id="flag" src="../images/belgium.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="left-bottom">
-                    <div class="projects">
-                        <h1>My projects</h1>
-                        <div class="calendar">
-                            <div class="day-and-activity activity-one">
-                                <div class="day">
-                                    <img src="../images/resume.png">
-                                </div>
-                                <div class="activity">
-                                    <h2>Resume</h2>
-                                    <div class="participants">
-                                        <img class="iconP1" src="../images/js.png" />
-                                        <img class="iconP1"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" />
-                                        <img class="iconP3"
-                                            src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" />
-                                    </div>
-                                </div>
-                                <a class="btn popup" onmouseover="showPopup()"> Check
-                                    <span class="popuptext" id="myPopup">You're already admiring this project</span>
-                                </a>
-
-                            </div>
-
-                            <div class="day-and-activity activity-two">
-                                <div class="day">
-                                    <img src="../images/website.png">
-                                </div>
-                                <div class="activity">
-                                    <h2>Gardentools Website</h2>
-                                    <div class="participants">
-                                        <img class="iconP1" src="../images/js.png" />
-                                        <img class="iconP2"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" />
-                                        <img class="iconP3"
-                                            src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" />
-                                    </div>
-                                </div>
-                                <a class="btn popup" href="https://gardentoolsbart.netlify.app/" target="_blank">Check</a>
-                            </div>
-
-                            <div class="day-and-activity activity-three">
-                                <div class="day">
-                                    <img src="../images/xmas.png">
-                                </div>
-                                <div class="activity">
-                                    <h2>Christmas countdown</h2>
-                                    <div class="participants">
-                                        <img class="iconP1" src="../images/js.png" />
-                                        <img class="iconP2"
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" />
-                                        <img class="iconP3"
-                                            src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" />
-                                    </div>
-                                </div>
-                                <a class="btn popup" href="https://activatechristmas.netlify.app/"
-                                    target="_blank">Check</a>
-                            </div>
-                            <h3 class="soon">
-                                <i class="fa-solid fa-spinner fa-spin"></i>
-                                More comming soon
-                            </h3>
-
-                        </div>
-                    </div>
-
-                    <div class="hobbies">
-                        <h1>Hobbies</h1>
-                        <div class="hobbies-container">
-                            <div class="hobby-item box-zero">
-                                <p>Puzzels</p>
-                                <img class="puzzel" src="../images/puzzel.png" alt="puzzel" />
-                            </div>
-                            <div class="hobby-item box-one">
-                                <p>Swimming</p>
-                                <img class="swim" src="../images/swim.png" alt="swim" />
-                            </div>
-                            <div class="hobby-item box-two">
-                                <p>Cooking</p>
-                                <img class="chef" src="../images/chef.png" alt="chef" />
-                            </div>
-                            <div class="hobby-item box-three">
-                                <p>Gaming</p>
-                                <img class="game" src="../images/gamer.png" alt="gamer" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="user-info">
-                    <!--<img src="../images/skill.png" alt="user" />
-                    <h3>Skills</h3>-->
-                </div>
-
-                <div class="skills">
-                    <table class="hardskills">
-                        <tr>
-                            <th>
-                                <h1>Hardskills</h1>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="hardSK1" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png">
-                            </td>
-                            <td>
-                                <div class="progress-7"></div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="hardSK1"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png">
-                            </td>
-                            <td>
-                                <div class="progress-8"></div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="hardSK1" src="../images/js.png">
-                            </td>
-                            <td>
-                                <div class="progress-9"></div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="hardSK1"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Angular_gradient.png">
-                            </td>
-                            <td>
-                                <div class="progress-10"></div>
-                            </td>
-                        </tr>
-                    </table>
-                    <!--<img class="hardSK1" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png">
-                    <div class="progress-7"></div>-->
-
-                </div>
-
-                <div class="skills">
-                    <!--<h1 style="align-self: flex-start">Softskills</h1>-->
-                    <table class="hardskills">
-                        <tr>
-                            <th>
-                                <h1>Softskills</h1>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="softSK1" src="../images/creative.png">
-                            </td>
-                            <td class="cre">
-                                Creative
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="softSK1" src="../images/flexibility.png">
-                            </td>
-                            <td>
-                                Flexibility
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="50" height="50" align="center">
-                                <img class="softSK1" src="../images/team.png">
-                            </td>
-                            <td>
-                                Teamwork
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="skills">
-                    <table class="hardskills">
-                        <tr>
-                            <th>
-                                <h1>Languages</h1>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class="languageImg">
-                                <img class="lang1" src="../images/belgium.png">
-                            </td>
-                            <td>
-                                Flemish
-                            </td>
-                            <td>
-                                <div role="progressbarFL" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                    style="--value:100" id="taal"></div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="languageImg">
-                                <img class="lang1" src="../images/france.png">
-                            </td>
-                            <td>
-                                French
-                            </td>
-                            <td>
-                                <div role="progressbarFR" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"
-                                    style="--value:80" id="taal"></div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="languageImg">
-                                <img class="lang1" src="../images/england.png">
-                            </td>
-                            <td>
-                                English
-                            </td>
-                            <td>
-                                <div role="progressbarEN" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"
-                                    style="--value:80" id="taal"></div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-    </main>
+      <section>
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
 </body>
-<script src="../js/index.js"></script>
-<script>
-    /*function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-
-        // Set a timeout to remove the "show" class after 3 seconds
-        setTimeout(function () {
-            popup.classList.remove("show");
-        }, 3000);
-    }*/
-
-    var popup = document.getElementById("myPopup");
-
-    function showPopup() {
-        popup.classList.add("show");
-    }
-
-    function hidePopup() {
-        popup.classList.remove("show");
-    }
-
-</script>
-
 </html>
+
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav');
+
+    menuIcon.addEventListener('click', function() {
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+        } else {
+            nav.classList.add('active');
+        }
+    });
+</script>
