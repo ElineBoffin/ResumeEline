@@ -250,7 +250,7 @@ body {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .content-skills li {
     margin: 5px;
     list-style-type: none;
