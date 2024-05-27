@@ -250,7 +250,10 @@ body {
 }
 
 
+@media only screen and (max-width: 400px) {
+  .content-skills {
+    visibility: hidden;
+  }
 
 
-
-  
+}
