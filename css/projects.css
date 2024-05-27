@@ -252,7 +252,8 @@ body {
 
 @media only screen and (max-width: 400px) {
   .content-skills {
-    visibility: hidden;
+    /*visibility: hidden;*/
+    margin-right: 15px;
   }
 
 
